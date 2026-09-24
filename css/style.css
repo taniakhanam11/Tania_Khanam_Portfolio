@@ -591,7 +591,6 @@ body {
 
 /* ========== education section end ========== */
 
-
 /* ========== skills section start ========== */
 
 .section {
@@ -614,19 +613,27 @@ body {
     transform: translateX(-50%);
 }
 
+/* ===== Skills Row ===== */
+
 .skills .skills-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 5rem;
+    justify-content: center;
+    gap: 3rem;
 }
 
+/* ===== Skills Column ===== */
+
 .skills-row .skills-column {
-    flex: 1 1 40rem;
+    flex: 0 0 calc(50% - 1.5rem);
+    max-width: calc(50% - 1.5rem);
 }
 
 .skills-column .skills-box {
     position: relative;
 }
+
+/* ===== Skills Title ===== */
 
 .skills-column .title {
     position: relative;
@@ -635,14 +642,16 @@ body {
     margin: 0 0 1.5rem;
 }
 
+/* ===== Skills Card ===== */
+
 .skills-box .skills-content {
     position: relative;
+    width: 100%;
     border: .2rem solid var(--main-color);
     border-radius: .5rem 1.5rem;
     padding: .5rem 1.5rem;
     z-index: 1;
     overflow: hidden;
-    width: 650px;
 }
 
 .skills-box .skills-content::before {
@@ -660,6 +669,8 @@ body {
 .skills-box .skills-content:hover::before {
     width: 100%;
 }
+
+/* ===== Progress ===== */
 
 .skills-content .progress {
     padding: 1rem 0;
@@ -690,48 +701,90 @@ body {
     background: var(--linear-color);
 }
 
-.skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span {
-    width: 96%;
+/* ===== Frontend Skills ===== */
+
+.skills-column:nth-child(1) .progress:nth-child(1) .bar span {
+    width: 95%;
 }
 
-.skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span {
+.skills-column:nth-child(1) .progress:nth-child(2) .bar span {
     width: 90%;
 }
 
-.skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span {
-    width: 65%;
+.skills-column:nth-child(1) .progress:nth-child(3) .bar span {
+    width: 90%;
 }
 
-.skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span {
-    width: 25%;
+.skills-column:nth-child(1) .progress:nth-child(4) .bar span {
+    width: 80%;
 }
 
-.skills-img-box {
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    /* background-color: #fff; */
+.skills-column:nth-child(1) .progress:nth-child(5) .bar span {
+    width: 75%;
 }
 
-.skills-img {
-    width: 430px;
-    height: 360px;
-    border-radius: 4px;
-    box-shadow: 0 0.5px 1px var(--main-color);
-    justify-content: center;
-    overflow: hidden;
-    margin-top: 60px;
+.skills-column:nth-child(1) .progress:nth-child(6) .bar span {
+    width: 75%;
 }
 
-.skills-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+/* ===== Backend Skills ===== */
+
+.skills-column:nth-child(2) .progress:nth-child(1) .bar span {
+    width: 75%;
 }
 
+.skills-column:nth-child(2) .progress:nth-child(2) .bar span {
+    width: 75%;
+}
+
+.skills-column:nth-child(2) .progress:nth-child(3) .bar span {
+    width: 75%;
+}
+
+.skills-column:nth-child(2) .progress:nth-child(4) .bar span {
+    width: 70%;
+}
+
+.skills-column:nth-child(2) .progress:nth-child(5) .bar span {
+    width: 75%;
+}
+
+.skills-column:nth-child(2) .progress:nth-child(6) .bar span {
+    width: 70%;
+}
+
+/* ===== Tools & Deployment ===== */
+
+.skills-column:nth-child(3) .progress:nth-child(1) .bar span {
+    width: 80%;
+}
+
+.skills-column:nth-child(3) .progress:nth-child(2) .bar span {
+    width: 85%;
+}
+
+.skills-column:nth-child(3) .progress:nth-child(3) .bar span {
+    width: 90%;
+}
+
+.skills-column:nth-child(3) .progress:nth-child(4) .bar span {
+    width: 75%;
+}
+
+.skills-column:nth-child(3) .progress:nth-child(5) .bar span {
+    width: 80%;
+}
+
+.skills-column:nth-child(3) .progress:nth-child(6) .bar span {
+    width: 75%;
+}
+
+.skills-column:nth-child(3) .progress:nth-child(7) .bar span {
+    width: 75%;
+}
 
 /* ========== skills section end ========== */
+
 
 
 /* ========== work section strat ========== */
